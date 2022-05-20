@@ -9,7 +9,7 @@ const cart = () => {
     const cartTotal = cartModal.querySelector('.cart-total > span');
     const cartWrapper = cartModal.querySelector('.cart-wrapper');
     const cartSendBtn = cartModal.querySelector('.cart-confirm');
-    const cartCounter = document.querySelector('.counter')
+    const cartCounter = document.querySelector('.counter');
 
     const openCart = () => {
         const cart = localStorage.getItem('cart') ?

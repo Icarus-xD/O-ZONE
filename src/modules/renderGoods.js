@@ -1,5 +1,10 @@
 const renderGoods = (goods) => {
     const goodsWrapper = document.querySelector('.goods');
+    const cartCounter = document.querySelector('.counter');
+    const cart = localStorage.getItem('cart') ?
+                JSON.parse(localStorage.getItem('cart')) : [];
+
+    cartCounter.textContent = cart.length;
 
     localStorage.setItem('goods', JSON.stringify(goods));
 
